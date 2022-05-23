@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahinur Islam - Web DEveloper</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/Services.html">Services</a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+
+
+        <!-- Home Body -->
+
+        <div class="main">
+
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="23">
+                <img class="cross" src="cross.jpg" alt="" width="23">
+            </div>
+
+
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="service">
+                        <div class="row">
+
+
+                            <div class="item">
+                                <h2>Service 01</h2>
+                                <h1>Web Design</h1>
+                                <p>Web design is the process of planning, conceptualizing, and arranging content online.
+                                 Today, designing a website goes beyond aesthetics to include the website's overall functionality. 
+                                 Web design also includes web apps, mobile apps, and user interface design.</p>
+                                 <button class="btn btn-sm">Enroll</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Service 02 -->
+                    <div class="service">
+                        <div class="row">
+
+                    
+
+                            <div class="item">
+                                <h2>Service 02</h2>
+                                <h1>Web Development</h1>
+                                <p>Web development, also known as website development.
+                                    It refers to the tasks associated with creating, building, and maintaining websites.
+                                    Web applications that run online on a browser. 
+                                    It also include web design, web programming, and database management.</p>
+                                    <button class="btn btn-sm">Enroll</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Service 03 -->
+                    <div class="service">
+                        <div class="row">
+
+                            
+
+                            <div class="item">
+                                <h2>Service 03</h2>
+                                <h1>Digital Marketing</h1>
+                                <p>Marketing changed the world and has become a medium that enables brands and consumers to communicate with each other.
+                                     Those who learn digital marketing also master the ways to connect with and conquer the world. 
+                                     The world of digital marketing is diverse. </p>
+                                     <button class="btn btn-sm">Enroll</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    
+
+    </div>
+    
+
+    //
+    <!-- js--- -->
+
+    <script type="text/javascript">
+
+
+        document.querySelector('.cross').style.display = 'none';
+        document.querySelector('.hamburger').addEventListener("click", () => {
+            document.querySelector('.sidebar').classList.toggle('sidebarGo');
+            if (document.querySelector('.sidebar').classList.contains('sidebarG')) {
+                document.querySelector('ham').style.display = 'inline'
+                document.querySelector('cross').style.display = 'none'
+            }
+            else {
+                document.querySelector('ham').style.display = 'none'
+                document.querySelector('cross').style.display = 'inline'
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

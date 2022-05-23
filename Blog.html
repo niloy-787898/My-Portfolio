@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahinur Islam - Web DEveloper</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/Services.html">Services</a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+
+
+        <!-- Home Body -->
+
+        <div class="main">
+
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="23">
+                <img class="cross" src="cross.jpg" alt="" width="23">
+            </div>
+
+
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="blogcontainer">
+                        <div class="blogitem">
+                            <h1>Blog's by Niloy</h1>
+                            <h2>Html- Base of Web desighn</h2>
+                            <p>HTML is referred to as the foundational language of the web.
+                                It is responsible for the basic structure of the web pages.
+                                It creates the skeleton of the web page.
+                                This mark- up language basically consists of tags and elements that helps in building a
+                                website or a blog from scratch.
+                                HTML is a crucial language and constitutes the basic structure of all modern websites
+                                out there.
+                                If you wish to or want to enter the world of web development, HTML is a mandatory
+                                language.
+                            </p>
+                            <button class="btn btn-sm">Read More</button>
+                        </div>
+                        <div class="blogitem">
+                            <h2>Css - Styling a website</h2>
+                            <p>CSS stands for Cascading Style Sheets
+                                It describes how HTML elements are to be displayed on screen, paper.
+                                It can control the layout of multiple web pages all at once
+                                External stylesheets are stored in CSS files
+                            </p>
+                            <button class="btn btn-sm">Read More</button>
+                        </div>
+                        <div class="blogitem">
+                            <h2>Javascript-heart of a website</h2>
+                            <p>JavaScript runs on the client side of the web.
+                                It can be used to design / program how the web pages behave on the occurrence of an
+                                event.
+                                It is an easy to learn and also powerful scripting language.
+                                It is widely used for controlling web page behavior.
+                            </p>
+                            <button class="btn btn-sm">Read More</button>
+                        </div>
+                        <div class="blogitem">
+                            <h2>Node.js-Back end booster of a website</h2>
+                            <p> Node.js runtime environment has been ranked the technology most commonly used by
+                                professional developers.
+                                It is an event-driven JavaScript runtime.
+                                It has myriad potential uses for JavaScript development.
+                                It has a great environment for building efficient network applications.
+                            </p>
+                            <button class="btn btn-sm">Read More</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            //
+            <!-- js--- -->
+
+            <script type="text/javascript">
+
+
+                document.querySelector('.cross').style.display = 'none';
+                document.querySelector('.hamburger').addEventListener("click", () => {
+                    document.querySelector('.sidebar').classList.toggle('sidebarGo');
+                    if (document.querySelector('.sidebar').classList.contains('sidebarG')) {
+                        document.querySelector('ham').style.display = 'inline'
+                        document.querySelector('cross').style.display = 'none'
+                    }
+                    else {
+                        document.querySelector('ham').style.display = 'none'
+                        document.querySelector('cross').style.display = 'inline'
+                    }
+
+                })
+
+            </script>
+
+</body>
+
+</html>

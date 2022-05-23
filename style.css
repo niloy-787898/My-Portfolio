@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(171, 214, 212);
+    font-family: 'Bree Serif', serif;
+    height: 100vh;
+    /* transition: transform 0.3s ease-in; */
+    
+}
+.sidebar nav{
+    padding: 30px;
+}
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 0px 0;
+    margin: 30px 0px 0px 0px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+
+
+
+/* ------------- */
+
+
+
+.main {
+    /* background-color: aqua; */
+    width: 90vw;
+    margin-left:  60px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(247, 247, 241);
+
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px;
+    font-size: 12px;
+    
+
+}
+
+.infocontainer {
+    /* background-color: darkgray;  */
+    height: 100vh;
+    width: 80vw;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    /* margin: 20px 88px; */
+
+}
+
+.hello {
+    font-size: 3em;
+    font-family: 'Bree Serif', serif;
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: bold;
+
+}
+
+.about {
+    font-size: 2.0em;
+    font-family: 'Bree Serif', serif;
+}
+
+.aboutmore {
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 17px;
+    margin-right: 52px;
+}
+
+.buttons {
+    margin-top: 20px;
+    font-size: 5px;
+}
+
+.btn {
+
+    padding: 5px 9px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(171, 214, 212);
+    margin: 0 0px;
+    cursor: pointer;
+
+}
+
+.btn-sm {
+    padding: 4px 7px;
+    border-radius: 9px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: rgb(171, 214, 212);
+    margin: 12px 0px 30px 0px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:lightseagreen ;
+    color: whitesmoke;
+
+}
+
+.devpic img {
+    height: 64vh;
+    width: 20vw;
+    margin: 80px -20px;
+}
+
+.contactform {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+    padding-top: 0px;
+    /* margin: 20px 88px 0px 0px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform form{
+    margin: 0px 0px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    /* padding: 12px 0px; */
+}
+
+.contactform form div {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    /* width: 18vw; */
+    border-radius: 6px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 10px;
+    color: lightseagreen;
+    margin: 0px 3px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0px;
+    padding: 6px;
+}
+.service {
+    margin: 20px 88px 0px 0px;
+    font-size: 15px;
+}
+
+.item{
+    font-family: 'Bree Serif', serif;
+    font-size: 10px;
+}
+.item h2{
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    margin: 0 0 0px 0;
+}
+.item h1{
+    font-family: 'Source Code Pro', monospace;
+    margin: 4px 0px 4px 0px;
+    font-weight: bold;
+}
+.item p{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: lighter;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+}
+
+.blogitem {
+    /* margin: 20px 88px; */
+    font-family: 'Bree Serif', serif;
+}
+
+.blogcontainer{
+    margin: -50px 0px;
+}
+
+.blogcontainer h1 {
+    font-family: 'Source Code Pro', monospace;
+    margin: 150px 0px 30px 0px;
+}
+
+.blogitem h2 {
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    margin: 0 0 10px 0;
+}
+
+.blogitem p{
+    font-size: 15px;
+}
+
+.intro {
+    margin: 20px 88px;
+    padding: 0px 0px 50px 0px;
+}
+
+.intro h1 {
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    margin: 20px 0 20px 0;
+}
+
+.intro p {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: lighter;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+.skill {
+    width: 300px;
+    height: 6px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+.t75 {
+    width: 225px;
+    background-color: cornflowerblue;
+}
+
+.t50 {
+    width: 150px;
+    background-color: lightgreen;
+}
+
+.t25 {
+    width: 75px;
+    background-color: lightseagreen;
+}
+
+.sidebarGo{
+        transform: translate(-350px, 0px);
+        position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left:10px ;
+}
+.cross {
+    margin-left: 90px;
+    /* display: none; */
+}
+
+
+@media (max-width:900px) {
+    .devpic{
+        display: none;
+    }
+    /* .devinfo,.intro, .contactform {
+        margin: 58px 8px;
+    } */
+    .devinfo{
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 5px;
+    }
+    .intro p, .item p,.blogitem p{
+        font-size: 10px;
+    }
+    /* .sidebar{
+        transform: translate(-350px, 0px);
+        position: absolute;
+    } */
+}

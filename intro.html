@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahinur Islam - Web DEveloper</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/Services.html">Services</a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+        <!-- Home Body -->
+
+
+        <div class="main">
+
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="23">
+                <img class="cross" src="cross.jpg" alt="" width="23">
+            </div>
+
+
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="intro">
+                        <h1>About Me</h1>
+                        <p>Hi, I am Shahinur islam.
+                          I am a web designer &  developer.
+                          In front-end i used Html,Css,Bootsrap,JavaScript,React etc.
+                          in back-end i prefer to use Nodejs.
+                          i am also a good UX desighner.
+                          i know about Data stuctue & algarithm.
+                          i normally try to make my webside simple & contentful.
+                          i really try to make it user friendly & easy to understood.
+                          when i do my task i am trying to give my 100% effeciency.
+                          thats my strategy.
+    
+                        </p>
+                        <h1>My Skill</h1>
+                        <div class="skillcontainer">
+                            <div class="skillitem"> HTML: <div class="skill t75"></div>
+                            </div>
+                            <div class="skillitem"> CSS : <div class="skill t75"></div>
+                            </div>
+                            <div class="skillitem"> JavaScript: <div class="skill t50"></div>
+                            </div>
+                            <div class="skillitem"> Python: <div class="skill t25"></div>
+                            </div>
+                            <div class="skillitem"> Php: <div class="skill t25"></div>
+                            </div>
+                            <div class="skillitem"> C : <div class="skill t25"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    // <!-- js--- -->
+
+    <script type="text/javascript">
+       
+    
+
+       document.querySelector('.cross').style.display = 'none';
+       document.querySelector('.hamburger').addEventListener("click", ()=>{
+           document.querySelector('.sidebar').classList.toggle('sidebarGo');
+        if(document.querySelector('.sidebar').classList.contains('sidebarG')){
+            document.querySelector('ham').style.display = 'inline'
+            document.querySelector('cross').style.display = 'none'
+        }
+        else{
+            document.querySelector('ham').style.display = 'none'
+            document.querySelector('cross').style.display = 'inline'
+        }
+        
+       })
+
+    </script>
+
+</body>
+
+</html>
